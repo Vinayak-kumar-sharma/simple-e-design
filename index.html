@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!DOCTYPE html>
+    <title>Simple E-commerce</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="../public/freevector.jpg" alt="Company Logo" class="logo" />
+      <h1>PB-I</h1>
+      <nav>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('about')">About</button>
+        <button onclick="showPage('contact')">Contact</button>
+      </nav>
+    </header>
+    <!-- Navigation -->
+    <nav>
+      <button onclick="showPage('home')">Home</button>
+      <button onclick="showPage('about')">About</button>
+      <button onclick="showPage('contact')">Contact</button>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="page">
+      <h1>Welcome to Our Store</h1>
+      <div class="product" onclick="showPage('about')">
+        <h2>Product Name</h2>
+        <p>Click for details</p>
+      </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+      <h1>Product Details</h1>
+      <p>Here are the details of the product.</p>
+      <button onclick="showPage('contact')">Buy Now</button>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Back to Home Button -->
+      <button onclick="showPage('home')" class="back-home">Back to Home</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Company Name. All rights reserved.</p>
+      <p>Privacy Policy | Terms of Service</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
