@@ -1,72 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!DOCTYPE html>
-    <title>Simple E-commerce</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <img src="freevector.jpg" alt="Company Logo" class="logo" />
-      <h1>PB-I</h1>
-      <nav>
-        <button onclick="showPage('home')">Home</button>
-        <button onclick="showPage('about')">About</button>
-        <button onclick="showPage('contact')">Contact</button>
-      </nav>
-    </header>
-    <!-- Navigation -->
-    <nav>
-      <button onclick="showPage('home')">Home</button>
-      <button onclick="showPage('about')">About</button>
-      <button onclick="showPage('contact')">Contact</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sand stone natural stone landing page">
+  <title>Simple E-commerce</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    
+    <nav id="fullscreen-menu" class="fullscreen-menu">
+    <input type="checkbox" id="check" name="" value="">
+    <label for="check" id="checkbtn">=</label>
+    <label class="logo"><a href="#"><img src="water-transportation-svgrepo-com.svg"></a></label>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Products">Products</a></li>
+        <li><a href="#About">About Us</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Home Page -->
-    <section id="home" class="page">
-      <h1>Welcome to Our Store</h1>
-      <div class="product" onclick="showPage('about')">
-        <h2>Product Name</h2>
-        <p>Click for details</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Welcome to Sand Stone</h1>
+        <p>Your premium destination for natural stone products.</p>
+        <a href="#Products" class="cta-button" aria-label="Shop Now">Shop Now</a>
       </div>
-    </section>
+    </div>
+  </section>
+    
 
-    <!-- About Page -->
-    <section id="about" class="page">
-      <h1>Product Details</h1>
-      <p>Here are the details of the product.</p>
-      <button onclick="showPage('contact')">Buy Now</button>
-    </section>
-
-    <!-- Contact Page -->
-    <section id="contact" class="page">
-      <h2>Contact Us</h2>
-      <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-
-      <!-- Back to Home Button -->
-      <button onclick="showPage('home')" class="back-home">Back to Home</button>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Company Name. All rights reserved.</p>
-      <p>Privacy Policy | Terms of Service</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h4>Contact Us</h4>
+        <p>123 Business Ave, Suite 456</p>
+        <p>City, Country 12345</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@business.com</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#facebook" class="social-icon">Facebook</a>
+        <a href="#linkedin" class="social-icon">LinkedIn</a>
+        <a href="#twitter" class="social-icon">Twitter</a>
+        <a href="#instagram" class="social-icon">Instagram</a>
+      </div>
+  
+      <div class="footer-newsletter">
+        <h4>Subscribe to Our Newsletter</h4>
+        <form action="#" method="post">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2024 Business Name. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
